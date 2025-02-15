@@ -1,4 +1,4 @@
-## Project Title: Secure Access System "SAS"
+## Secure Access System (SAS)
 
 ## Overview
 The Secure Access System or SAS is a solution for integrating a web-based application with hardware components to manage access control to data centers, server rooms, sport facilities etc. using the RFID technology. It features an interface that enables administrators to monitor access points and perform full CRUD operations on members data.
@@ -79,7 +79,7 @@ git commit -m "Add detailed description of your changes"`
 We appreciate your contributions and will review your pull request as soon as possible. Thank you for helping improve the Secure Access System!
 
 ## License
-The Secure Access System "SAS" is open source and available to the public under the [MIT License](https://opensource.org/licenses/MIT).
+The Secure Access System (SAS) is open source and available to the public under the [MIT License](https://opensource.org/licenses/MIT).
 
 The MIT License is a permissive license that allows you to freely use, modify, and distribute the software, provided that you include the original copyright notice and a copy of the license in any distribution. This means you can use the Secure Access System in your own projects, whether they are open source or proprietary.
 
