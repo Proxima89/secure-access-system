@@ -14,7 +14,7 @@ The Secure Access System or SAS is a solution for integrating a web-based applic
 
 Note: This repo is focused mainly on the software part of the system.
 
-1. Before a user is granted access to a secured building, an RFID tag will be linked with their credentials (names), after running the `save_user.py` file inside python environment. The file `save_user.py` can also rewrite if already user exist on it.
+1. Before a user is granted access to a secured building, an RFID tag will be linked with their credentials (names), after running the `save_user.py` file inside python environment. The file `save_user.py` can also rewrite if already user exist on the table.
 
 2. Main file is `access_controll_app.py`. Tap your card to the RFID reader, if your RFID is recorded in the database, you will be granted an access, where the system will send a signal to the DC relay and this will unlock the electronic switch, and same for when you exiting the facility.
 
@@ -59,8 +59,6 @@ Contributions to the SAS are welcome! Follow these guidelines to contribute:
 1. **Fork the repository**: Click the "Fork" button at the top right of this repository to create a copy of the repository on your GitHub account.
 2. **Create a new branch**: Create a new branch for your feature or bug fix. Use a descriptive name for your branch (e.g., `feature/add-login`, `bugfix/fix-authentication`).
    `git checkout -b feature/your-feature-name`
-## License
-The SAS is an open to the public. licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 3. Set up the development environment: Follow the instructions in this file to set up your development environment. Ensure that all dependencies are installed. If you install the dependancies from the requirement.txt file you have to make sure you hardware components are all setup and connected as well.
 
@@ -81,7 +79,7 @@ git commit -m "Add detailed description of your changes"`
 We appreciate your contributions and will review your pull request as soon as possible. Thank you for helping improve the Secure Access System!
 
 ## License
-The Secure Access System is open source and available to the public under the [MIT License](https://opensource.org/licenses/MIT).
+The Secure Access System "SAS" is open source and available to the public under the [MIT License](https://opensource.org/licenses/MIT).
 
 The MIT License is a permissive license that allows you to freely use, modify, and distribute the software, provided that you include the original copyright notice and a copy of the license in any distribution. This means you can use the Secure Access System in your own projects, whether they are open source or proprietary.
 
