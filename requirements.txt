@@ -51,6 +51,7 @@ rpi-ws281x==5.0.0
 RPi.GPIO==0.7.1
 safetensors==0.4.2
 smbus==1.1.post2
+smbus2==0.4.2
 soupsieve==2.5
 spidev==3.6
 sysv-ipc==1.1.0
@@ -62,3 +63,4 @@ typing_extensions==4.10.0
 urllib3==2.2.1
 validators==0.26.0
 yarl==1.9.4
+pytest-cov==4.1.0

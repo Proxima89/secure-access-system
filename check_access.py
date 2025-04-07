@@ -1,4 +1,4 @@
-import smbus
+import smbus2 as smbus
 import time
 from db_connect import db_connection
 from gpiozero import Buzzer
@@ -33,7 +33,15 @@ GPIO.setup(RELAY_PIN, GPIO.OUT)
 GPIO.output(RELAY_PIN, 0)
 # GPIO.output(RELAY_PIN, GPIO.LOW)  # Start with the relay off
 
+# TEMPORARY FIX FOR PYTEST: Global bus variable - will be refactored to avoid global state in future versions.
+bus = None
+
 def lcd_init():
+  # Open I2C interface
+  global bus
+  if bus is None:
+    bus = smbus.SMBus(1)
+  
   # Initialize the display
   lcd_byte(0x33, LCD_CMD)
   lcd_byte(0x32, LCD_CMD)
@@ -84,10 +92,6 @@ def execute_query(query, params=None):
     return None
 
 def main():
-  # Open I2C interface
-  global bus
-  bus = smbus.SMBus(1)
-
   # Initialize the LCD
   lcd_init()
 
