@@ -12,7 +12,7 @@ The Secure Access System or SAS is a solution for integrating a web-based applic
 
 ## Usage
 
-Note: This repo is focused mainly on the software part of the system.
+Note: This repo is focused mainly on the software side of the system.
 
 1. Before a user is granted access to a secured building, an RFID tag will be linked with their credentials (names), after running the `save_user.py` file inside python environment. The file `save_user.py` can also rewrite if already user exist on the table.
 
@@ -67,8 +67,7 @@ source venv/bin/activate  # For Windows you might use venv\Scripts\activate
 pip install -r requirements.txt`
 
 4. Make your changes: Implement your feature or bug fix. Ensure that your code follows the project's coding standards and includes appropriate documentation and tests.
-5. Run tests: Run the existing tests (Still under process) and add new tests as needed to ensure your changes work correctly.
-pytest
+5. Run tests: Run the test in python enviropnment with `pytest --cov=. --cov-report=term-missing` (Which will generate coveage file as well) and add new tests as needed to ensure your changes work correctly. The current tests are still under progress.
 6. Commit your changes: Write a clear and concise commit message describing your changes.
 `git add .
 git commit -m "Add detailed description of your changes"`
