@@ -20,8 +20,8 @@ def execute_query(query, params=None):
     result = cursor.fetchall()
     db.close()
     return result
-  except mysql.connector.Error as err:
-    print(f"Error: {err}")
+  except Exception as e:
+    print(f"Error: {e}")
     return None
 
 # Function to get the latest signed-in user
